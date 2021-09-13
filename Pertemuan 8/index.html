@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag untuk Formulir</title>
+</head>
+<body>
+<form action="/path" method="POST">
+        <fieldset>
+            <legend>Formulir Calon Pegawai</legend>
+            
+            <label for="name">Nama: </label>
+            <input type="text" name="name" /><br>
+           
+            <label for="address">Alamat: </label>
+            <input type="text" name="address" /><br>
+            
+            <label for="password">Password: </label>
+            <input type="text" name="password" /><br>
+        
+        <section class="kelamin">
+            <span>Jenis Kelamin: </span>
+            <input type="radio" name="kelamin" id="laki-laki" value="laki-laki">
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" name="kelamin" id="perempuan" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+        </section>
+
+        <section class="program microsoft">
+            <span>Program Microsoft yang dikuasai: </span>
+            <input type="checkbox" name="program microsoft" id="ms.excel" value="ms.excel">
+            <label for="ms.excel">MS.Excel</label>
+            
+            <input type="checkbox" name="program microsoft" id="ms.powerpoint" value="ms.word">
+            <label for="ms.word">MS.PowerPoint</label>
+
+            <input type="checkbox" name="program microsoft" id="ms.spreadsheet" value="ms.powerpoint">
+            <label for="ms.powerpoint">MS.SpreadSheet</label>
+        </section>
+
+        <section>
+            <span>Kota Asal: </span>
+            <select>
+                <option value="manado">Manado</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="batam">Batam</option>
+                <option value="denpasar">Denpasar</option>
+            </select>
+        </section>
+
+       <section>
+        <label for="calon pegawai">Apa yang Membuat Kami harus memilih Anda?: </label>
+        <textarea rows="5" cols="50" placeholder="Tulis jawaban Anda disini...."></textarea>
+       </section>   
+               
+        <section class="proses">
+            <button>Proses</button>
+        </section>
+
+    </fieldset>
+</form>
+</body>
+</html>
